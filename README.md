@@ -1,37 +1,76 @@
-# Playwright Project
+# dZENcode - UI Automation Tests
 
-Пример тестового проекта на Playwright для автоматизации UI-тестов.
+Автоматизированные UI-тесты для сайта [dzencode.com](https://dzencode.com) на базе Playwright.
 
-## Установка зависимостей
-
-1. Клонируем репозиторий:
-git clone https://github.com/dZENcode/dZENcode.git   
-cd dZENcode
-3. Устанавливаем зависимости Node.js:
-npm install
-## Запуск тестов
-
-- Запуск всех тестов:
-npx playwright test
-- Запуск конкретного теста:
-npx playwright test tests/example.spec.js
-- Запуск тестов в браузере с GUI:
-npx playwright test --headed
 ## Требования
 
 - Node.js v18+
 - Playwright v1.45+
 
+## Установка
+
+1. Клонируй репозиторий:
+```bash
+git clone https://github.com/dZENcode/dZENcode.git
+cd dZENcode
+```
+
+2. Установи зависимости:
+```bash
+npm install
+```
+
+3. Установи браузеры Playwright:
+```bash
+npx playwright install
+```
+
+## Запуск тестов
+```bash
+# Запустить все тесты
+npx playwright test
+
+# Запустить конкретный файл
+npx playwright test tests/example.spec.js
+
+# Запустить с видимым браузером
+npx playwright test --headed
+
+# Запустить в debug режиме
+npx playwright test --debug
+
+# Посмотреть отчёт после запуска
+npx playwright show-report
+```
+
 ## Структура проекта
+```
+dZENcode/
+├── tests/               # Тестовые сценарии
+│   └── example.spec.js
+├── playwright.config.js # Конфигурация Playwright
+├── package.json         # Зависимости проекта
+├── package-lock.json
+└── README.md
+```
 
-/tests # Тестовые сценарии
-/playwright.config.js # Конфигурация Playwright
-/package.json # Список зависимостей
-/package-lock.json
+## Покрытие тестами
 
+- ✅ Переключение языков (EN/RU)
+- ✅ Форма обратной связи
+- ✅ Навигация по страницам
+- ✅ Адаптивность (mobile/desktop)
 
-## Примечания
+## Contributing
 
-- Все тесты можно запускать как в headless, так и в headed режиме.
-- Для наблюдения за браузером используйте `--headed`.
-- Перед пушем изменений проверяйте, что локальная ветка синхронизирована с main на GitHub.
+1. Создай ветку: `git checkout -b feature/new-test`
+2. Напиши тесты
+3. Проверь что все проходят: `npx playwright test`
+4. Закоммить: `git commit -m "Add new test"`
+5. Запушь: `git push origin feature/new-test`
+6. Создай Pull Request
+
+## Полезные ссылки
+
+- [Playwright Documentation](https://playwright.dev)
+- [Playwright Best Practices](https://playwright.dev/docs/best-practices)
