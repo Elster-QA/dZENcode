@@ -5,8 +5,9 @@
 ## Установка зависимостей
 
 1. Клонируем репозиторий:
-git clone https://github.com/dZENcode/dZENcode.git 'cd dZENcode'
-2. Устанавливаем зависимости Node.js:
+git clone https://github.com/dZENcode/dZENcode.git
+cd dZENcode
+3. Устанавливаем зависимости Node.js:
 npm install
 ## Запуск тестов
 
