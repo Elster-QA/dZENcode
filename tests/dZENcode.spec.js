@@ -1,7 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-test('Переход по адресу', async ({ page }) => {
+test('UI_TEST', async ({ page }) => {
   await page.goto('https://rahulshettyacademy.com/seleniumPractise/#/');
   await expect(page.locator('.brand.greenLogo').filter({ hasText: 'GREEN' })).toBeVisible();
 
