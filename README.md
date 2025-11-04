@@ -1,6 +1,6 @@
 # dZENcode - UI Automation Tests
 
-Автоматизированные UI-тесты для сайта [dzencode.com](https://dzencode.com) на базе Playwright.
+Автоматизированные UI-тесты для сайта [dzencode.com]([https://dzencode.com](https://rahulshettyacademy.com/seleniumPractise/#/)) на базе Playwright.
 
 ## Требования
 
