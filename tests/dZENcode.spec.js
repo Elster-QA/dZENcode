@@ -23,8 +23,6 @@ await page.getByRole('img', { name: 'Cart' }).click();
 await expect(page.locator('.cart-item', { hasText: 'Carrot' }).first()).toBeVisible();
 await expect(page.locator('.cart-item', { hasText: 'Mushroom' }).first()).toBeVisible();
 
-
-
 await page.locator('.cart-item', { hasText: 'Carrot' }).getByRole('link', { name: '×' }).click();
 
 });
