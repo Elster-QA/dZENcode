@@ -29,8 +29,7 @@ npx playwright test --headed
 /package.json # Список зависимостей
 /package-lock.json
 
-markdown
-Копировать код
+
 ## Примечания
 
 - Все тесты можно запускать как в headless, так и в headed режиме.
