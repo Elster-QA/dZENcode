@@ -7,36 +7,16 @@
 1. Клонируем репозиторий:
 git clone https://github.com/dZENcode/dZENcode.git
 cd dZENcode
-
-markdown
-Копировать код
-
 2. Устанавливаем зависимости Node.js:
 npm install
-
-markdown
-Копировать код
-
 ## Запуск тестов
 
 - Запуск всех тестов:
 npx playwright test
-
-diff
-Копировать код
-
 - Запуск конкретного теста:
 npx playwright test tests/example.spec.js
-
-diff
-Копировать код
-
 - Запуск тестов в браузере с GUI:
 npx playwright test --headed
-
-markdown
-Копировать код
-
 ## Требования
 
 - Node.js v18+
@@ -51,7 +31,6 @@ markdown
 
 markdown
 Копировать код
-
 ## Примечания
 
 - Все тесты можно запускать как в headless, так и в headed режиме.
